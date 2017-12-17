@@ -7,7 +7,8 @@ Crafty.c('Ball', {
     this.isCollidingWithPaddle = false
     this.addComponent('2D, Canvas, Color, Bounded, Solid, Collision, Image')
 
-    this.image('./docs/' + ballURL)
+    console.log(Crafty.paths())
+    this.image('./pong-crafty-parcel/' + ballURL)
     console.log(Crafty.assets[ballURL])
     console.log(ballURL)
 

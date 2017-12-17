@@ -13,8 +13,7 @@ import { whoJustScored, prepForRound } from './score';
 // Initialize Crafty.
 Crafty.init(Setup.width, Setup.height, Setup.gameEl)
 Crafty.paths({
-  images: './dist/',
-  audio: './dist/'
+  images: './pong-crafty-parcel/'
 })
 Crafty.timer.FPS(60)
 
