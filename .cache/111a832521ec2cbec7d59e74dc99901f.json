@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"function e(e,i,t){Object.defineProperty(e,i,{enumerable:!1,configurable:!1,get:function(){return e[t]},set:function(i){e[t]=i}})}module.exports={defineAliases:function(i){e(i,\"image_whitelist\",\"imageWhitelist\")}};"},"hash":"b3ecfcf3ea87adf9a936cec62e217a5f"}
