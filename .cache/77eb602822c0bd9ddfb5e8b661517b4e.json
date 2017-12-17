@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../core/core.js","loc":{"line":1,"column":21}}],"generated":{"js":"var e=require(\"../core/core.js\");e.extend({_pixelartEnabled:!1,pixelart:function(r){e._pixelartEnabled=r,e.trigger(\"PixelartSet\",r)}});"},"hash":"e58ff3c856e4af169f61bfa50f68e158"}
