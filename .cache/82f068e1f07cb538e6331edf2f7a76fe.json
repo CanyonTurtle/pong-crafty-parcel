@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./bounded-object","loc":{"line":2,"column":7}},{"name":"./paddles","loc":{"line":3,"column":7}},{"name":"./ball","loc":{"line":4,"column":7}}],"generated":{"js":"\"use strict\";\n\nrequire(\"./bounded-object\");\n\nrequire(\"./paddles\");\n\nrequire(\"./ball\");\n\nconsole.log('loading components...');"},"hash":"5e93706ec5a4866d0945e039fc7806c4"}
