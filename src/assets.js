@@ -14,7 +14,7 @@ let assetsObj = {
 
 export const startGame = function () {
   Crafty.paths({
-    'images': '/docs/'
+    'images': '/pong-crafty-parcel/'
   })
   Crafty.load(assetsObj, function () {
     console.log('starting game...')
