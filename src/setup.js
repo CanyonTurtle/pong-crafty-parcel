@@ -26,3 +26,5 @@ export let scaleY = function (y) {
 }
 
 export const MAX_BALL_SPEED_X = 150
+
+export const PADDLE_LEFT_RIGHT = true

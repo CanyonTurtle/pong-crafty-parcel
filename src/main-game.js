@@ -22,6 +22,8 @@ Crafty.defineScene('playRound', function () {
   paddle1.startPaddle({
     up: Crafty.keys.W,
     down: Crafty.keys.S,
+    left: Crafty.keys.A,
+    right: Crafty.keys.D,
     x: Setup.bounds.left + Setup.scaleX(2),
     y: Setup.height / 2 - Setup.scaleY(15) / 2
   })
@@ -41,6 +43,8 @@ Crafty.defineScene('playRound', function () {
     paddle2.startPaddle({
       up: Crafty.keys.UP_ARROW,
       down: Crafty.keys.DOWN_ARROW,
+      left: Crafty.keys.LEFT_ARROW,
+      right: Crafty.keys.RIGHT_ARROW,
       x: Setup.bounds.right - Setup.scaleX(2) - Setup.scaleX(1.5),
       y: Setup.height / 2 - Setup.scaleY(15) / 2
     })

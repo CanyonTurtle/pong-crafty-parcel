@@ -2,7 +2,7 @@ import * as Setup from './setup'
 
 // both players use the paddle component 
 Crafty.c('Paddle', {
-  startPaddle ({ up, down, x, y }) {
+  startPaddle ({ up, down, left, right, x, y }) {
     this.addComponent('2D, Canvas, Color, Keyboard, Bounded, Solid')
     this.speed = Setup.scaleX(60)
     this.w = Setup.scaleX(1.5)
@@ -23,6 +23,13 @@ Crafty.c('Paddle', {
         this.movingDir = 1
       } else {
         this.movingDir = 0
+      }
+      if (Setup.PADDLE_LEFT_RIGHT) {
+        if (this.isDown(left)) {
+          ctx.x -= ctx.speed * (dt / 1000)
+        } else if (this.isDown(right)) {
+          ctx.x += ctx.speed * (dt / 1000)
+        }
       }
       this.restrict.call(this)
     }))
