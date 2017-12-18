@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"Crafty.defineScene('winner', function () {\r\n  console.log('the winner has won the win')\r\n  Crafty.trigger('showWinnerUI')\r\n})"},"hash":"5d63e03a1a04caa04e4d1661212ab29e"}

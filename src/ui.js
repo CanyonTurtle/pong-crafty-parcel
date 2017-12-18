@@ -8,6 +8,7 @@ export var menuTitleText
 export var startInstructionsText
 
 export var someoneJustWonText
+export var winnerText
 export var menuStartText
 export var menuStartText2
 export var menuStartText3
@@ -127,6 +128,17 @@ Crafty.c("menuUISingleton", {
         y: Setup.height / 2,
         w: 200,
         text: 'Player ' + whoJustScored + ' scored!',
+        size: 20,
+        color: UI_COLOR
+      })
+    })
+    this.bind('showWinnerUI', function () {
+      winnerText = Crafty.e('GAMEUITEXT')
+      winnerText.start({
+        x: Setup.width / 2,
+        y: Setup.height / 2,
+        w: 200,
+        text: 'Player ' + whoJustScored + ' won!',
         size: 20,
         color: UI_COLOR
       })

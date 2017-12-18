@@ -5,6 +5,7 @@ import './ball'
 import './cpu-paddle'
 import './main-menu'
 import './main-game'
+import './winner'
 import { randomInRange } from './utilities'
 import * as Setup from './setup'
 import { whoJustScored, prepForRound } from './score';
