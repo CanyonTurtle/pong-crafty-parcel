@@ -8,6 +8,7 @@ import './main-game'
 import { randomInRange } from './utilities'
 import * as Setup from './setup'
 import { whoJustScored, prepForRound } from './score';
+import { startGame } from './assets'
 
 
 // Initialize Crafty.
@@ -19,6 +20,5 @@ Crafty.timer.FPS(60)
 
 Crafty.background('#001f3f')
 
-
-console.log('starting game...')
-Crafty.enterScene('mainMenu')
+// Crafty.enterScene('mainMenu')
+startGame()

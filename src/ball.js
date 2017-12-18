@@ -5,10 +5,9 @@ import ballURL from './ball-final.png'
 Crafty.c('Ball', {
   start ({ x, y, vx, vy }) {
     this.isCollidingWithPaddle = false
-    this.addComponent('2D, Canvas, Color, Bounded, Solid, Collision, Image')
+    this.addComponent('2D, Canvas, Color, Bounded, Solid, Collision, pingpongball')
 
     console.log(Crafty.paths())
-    this.image('./pong-crafty-parcel/' + ballURL)
     console.log(Crafty.assets[ballURL])
     console.log(ballURL)
 
