@@ -1,5 +1,5 @@
 import * as Setup from './setup'
-import { incrementScore1, incrementScore2 } from './score'
+import { incrementScore1, incrementScore2, incrementBounceCount} from './score'
 import ballURL from './ball-final.png'
 
 Crafty.c('Ball', {
@@ -25,6 +25,7 @@ Crafty.c('Ball', {
         if (!this.isCollidingWithPaddle) {
           this.vx *= -1
           this.vy += Setup.scaleY(30) * hitDatas[0].obj.movingDir
+          incrementBounceCount()
         }
         this.isCollidingWithPaddle = true
       } else {

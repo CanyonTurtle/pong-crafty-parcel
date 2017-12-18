@@ -5,7 +5,7 @@ import * as Score from './score'
 // this scene defines how each round of Pong plays.
 Crafty.defineScene('playRound', function () {
 
-  UI.initGameUI()
+  Crafty.trigger('initGameUI')
 
   var ball
   // ball entity
@@ -63,7 +63,7 @@ Crafty.defineScene('playRound', function () {
         someoneScoredFrame = eventData.frame
       }
       pauseGame = true
-      UI.displaySomeoneJustWonText()
+      Crafty.trigger('displaySomeoneJustWonText')
     }
     if (!pauseGame) {
       if (launchedBall) {

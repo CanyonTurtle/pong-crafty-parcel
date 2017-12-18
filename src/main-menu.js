@@ -2,7 +2,7 @@ import * as UI from './ui'
 import * as Score from './score'
 
 Crafty.defineScene('mainMenu', function () {
-  UI.initMenuUI()
+  Crafty.trigger('initMenuUI')
   var mainMenu = Crafty.e('2D, DOM, Keyboard')
   mainMenu.x = 0
   mainMenu.y = 0
