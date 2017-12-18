@@ -38,11 +38,19 @@ Crafty.c('CpuPaddle', {
     }
     this.bind('movePaddles', function (dt) {
       if (ctx.ball !== undefined) {
+        let py = ctx.y
         if (Score.cpuMode === 1) {
           ctx.yv = ctx.pid.step()
           ctx.y += ctx.yv
         } else {
           ctx.y += (Math.sign(ball.y - ctx.y) * ctx.cpuSpeed * (dt / 1000))
+        }
+        if (y < py) {
+          ctx.movingDir = -1
+        } else if (y > py) {
+          ctx.movingDir = -1
+        } else  {
+          ctx.movingDir = 0
         }
       }
     })
