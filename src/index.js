@@ -13,9 +13,6 @@ import { startGame } from './assets'
 
 // Initialize Crafty.
 Crafty.init(Setup.width, Setup.height, Setup.gameEl)
-Crafty.paths({
-  images: './pong-crafty-parcel/'
-})
 Crafty.timer.FPS(60)
 
 Crafty.background('#001f3f')

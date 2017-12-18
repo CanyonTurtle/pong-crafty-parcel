@@ -65,7 +65,6 @@ export let initGameUI = function () {
     size: 10,
     color: UI_COLOR
   })
-  console.log('setting stuff')
 }
 
 export let displaySomeoneJustWonText = function () {

@@ -17,8 +17,6 @@ export const startGame = function () {
     'images': '/pong-crafty-parcel/'
   })
   Crafty.load(assetsObj, function () {
-    console.log('starting game...')
-    console.log(Crafty.assets['/dist/pingpongball'])
     Crafty.enterScene('mainMenu')
   })
 }

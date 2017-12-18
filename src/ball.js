@@ -7,17 +7,10 @@ Crafty.c('Ball', {
     this.isCollidingWithPaddle = false
     this.addComponent('2D, Canvas, Color, Bounded, Solid, Collision, pingpongball')
 
-    console.log(Crafty.paths())
-    console.log(Crafty.assets[ballURL])
-    console.log(ballURL)
-
     this.x = x
     this.y = y
     this.vx = vx
     this.vy = vy
-
-    // this.w = Setup.scaleX(17)
-    // this.h = Setup.scaleY(17 * Setup.ASPECT_RATIO)
 
     let ctx = this
     this.bind('moveBall', function (dt) {
@@ -45,9 +38,6 @@ Crafty.c('Ball', {
       if (this.x === Setup.bounds.right - this.w) {
         incrementScore1()
       }
-    })
-    this.bind('HitOn', function(hitData) {
-      console.log(hitData)
     })
   },
 })
