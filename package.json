@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "craftyjs": "^0.8.0"
+    "craftyjs": "^0.8.0",
+    "static-eval": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,5 +15,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "none"
 }
